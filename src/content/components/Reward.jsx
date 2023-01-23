@@ -1,8 +1,10 @@
+import { Alert } from '@mui/material';
 import React, { useState } from 'react'
 import Popup from 'reactjs-popup';
 import './reward.css'
 
-function Reward({id, place, drinks, points, claimReward}) {
+function Reward({id, place, drinks, points, claimReward, pointsAvailible}) {
+
 
   return (
     <div className="reward">
@@ -11,7 +13,7 @@ function Reward({id, place, drinks, points, claimReward}) {
                 <p>{drinks}</p>
             </div>
           <Popup
-            trigger={<div className="btn claim">{points}</div>}
+            trigger={<div className="btn claim">{points}pts</div>}
       modal
       nested
     >
@@ -27,10 +29,8 @@ function Reward({id, place, drinks, points, claimReward}) {
           <div className="actions">
             <button
               className="button"
-              onClick={() => {
-                claimReward(id);
-                close();
-              }}
+              onClick={() => {claimReward(id);
+                close()}}
             >
               Claim
             </button>
@@ -40,7 +40,7 @@ function Reward({id, place, drinks, points, claimReward}) {
                 close();
               }}
             >
-              maybe next time
+              Maybe next time
             </button>
           </div>
         </div>

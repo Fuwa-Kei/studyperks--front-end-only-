@@ -1,23 +1,34 @@
+
 import React, { useState } from 'react'
 import rewardsToClaim from '../assets/rewardsToClaim'
+import Popup from './components/Popup';
 import Reward from './components/Reward'
 
 import './rewards.css'
 
+
 function Rewards() {
 
     const [rewards, setRewards] = useState(rewardsToClaim)
+    const [pointsAvailible, setPoints] = useState(300)
+
 
     const claimReward = (id) => {
-        setRewards((rewards) => rewards.filter((reward) => reward.id !== id)
-        )
+        if (pointsAvailible > rewards[id-1].points) {
+            setRewards((rewards) => rewards.filter((reward) => reward.id !== id)
+            );
+            setPoints(pointsAvailible - rewards[id-1].points);
+        } else {
+            <Popup />
+           alert("Sorry not enough points")
+        }
     }
 
   return (
     <div className="rewards">
     <div className="col-2 perks">
         <h4>total perk points</h4>
-        <h1>300</h1>
+        <h1>{pointsAvailible}</h1>
         <p>Total hours studied: 17.7hrs</p>
     </div>
     <div className="col-2 claims">
