@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import hero from '../assets/hero-img.png'
 import './hero.css'
 
@@ -11,7 +12,7 @@ function Hero() {
             <p>Join a group or create your own <br />
                 Convert your study time to perks like that coffee you're <br />
                 needing right now</p>
-            <div className="btn ">sign up</div>
+            <Link to="/register"><div className="btn ">sign up</div></Link>
             
       </div>
         <div className="col-2 hero-img">

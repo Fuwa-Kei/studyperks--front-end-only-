@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './content/Footer';
 import Homepage from './content/Homepage';
 import Profile from './content/Profile';
+import Register from './content/Register';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" element={<Homepage />} />
       
       <Route path="/profile" element={<Profile />} />
+      <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </Router>
