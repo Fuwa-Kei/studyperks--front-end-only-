@@ -1,0 +1,59 @@
+.reward {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.claimText {
+    text-align: left;
+}
+
+.btn.claim {
+    min-width: 130px;
+}
+
+.modal {
+    font-size: 12px;
+    width: 100%;
+    background: white;
+    padding: 50px;
+  }
+  .modal > .header {
+
+    border-bottom: 2px solid var(--ascent-color);
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+
+  }
+  .modal > .content {
+
+    margin: auto;
+    padding: 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .modal > .actions {
+
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+
+  }
+
+.button {
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 10px;
+    border: none;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    transform: translateY(1px);
+}

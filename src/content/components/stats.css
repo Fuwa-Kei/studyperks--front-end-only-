@@ -1,0 +1,14 @@
+.col-4.data {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.col-4 img {
+    height: 40px;
+}
+
+.stat {
+    font-size: 20px;
+    font-weight: bold;
+}

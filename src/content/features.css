@@ -1,0 +1,9 @@
+.features {
+    margin: 40px auto;
+    max-width: 1440px;
+    padding: 0 50px;
+}
+
+.features h3 {
+    text-align: center;
+}

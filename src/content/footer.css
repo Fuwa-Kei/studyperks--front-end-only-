@@ -1,0 +1,25 @@
+.footer {
+    background: radial-gradient(white, #FCEADE);
+    padding: 30px 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons img {
+    height: 30px;
+}
+span {
+    font-weight: 600;
+}
+
+.col {
+    line-height: 30px;
+}
+
+.logo {
+    display: flex;
+
+}

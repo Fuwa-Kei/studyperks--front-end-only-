@@ -1,0 +1,26 @@
+.room-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.room-links.prof {
+    padding-bottom: 40px;
+}
+
+.room-links a {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 550px) {
+    .room-links {
+        flex-direction: column;
+    }
+    
+    .room-links a {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
