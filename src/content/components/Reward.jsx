@@ -1,9 +1,10 @@
-import { Alert } from '@mui/material';
-import React, { useState } from 'react'
+
+import React from 'react'
 import Popup from 'reactjs-popup';
 import './reward.css'
 
-function Reward({id, place, drinks, points, claimReward, pointsAvailible}) {
+function Reward({id, place, drinks, points, claimReward}) {
+
 
 
   return (
@@ -30,10 +31,12 @@ function Reward({id, place, drinks, points, claimReward, pointsAvailible}) {
             <button
               className="button"
               onClick={() => {claimReward(id);
-                close()}}
-            >
+                close()
+              }
+              }>
               Claim
             </button>
+        
             <button
               className="button"
               onClick={() => {

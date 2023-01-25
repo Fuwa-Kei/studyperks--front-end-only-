@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
+import Swal from 'sweetalert2'
 import rewardsToClaim from '../assets/rewardsToClaim'
-import Popup from './components/Popup';
 import Reward from './components/Reward'
 
 import './rewards.css'
@@ -13,14 +13,20 @@ function Rewards() {
     const [pointsAvailible, setPoints] = useState(300)
 
 
+
     const claimReward = (id) => {
         if (pointsAvailible > rewards[id-1].points) {
             setRewards((rewards) => rewards.filter((reward) => reward.id !== id)
             );
             setPoints(pointsAvailible - rewards[id-1].points);
         } else {
-            <Popup />
-           alert("Sorry not enough points")
+            Swal.fire({
+                animation: false,
+                text: "Sorry you don't have enough points",
+                confirmButtonText: 'Back to studying',
+                buttonsStyling: false,
+                confirmButton: 'btn btn-success',
+              })
         }
     }
 

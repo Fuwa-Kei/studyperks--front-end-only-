@@ -1,0 +1,31 @@
+
+.userChat {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.userChat img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.chatUser h4{
+    margin: 0;
+}
+
+.chatUser p {
+    color: #303030;
+    
+}
+
+@media screen and (max-width: 750px) {
+    .chatUser {
+        display: none;
+    }
+
+    .userChat {
+        justify-content: center;
+    }
+}

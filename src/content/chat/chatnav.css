@@ -1,0 +1,26 @@
+.chatNavbar {
+    background: #753362;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.leave {
+    width: 120px;
+    min-width: 100px;
+    background: #EEE6F1;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) {
+    .chatNavbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}

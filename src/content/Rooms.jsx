@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Room from './components/Room'
 import './rooms.css'
 
@@ -9,11 +10,11 @@ function Rooms() {
     <h3>Join a room</h3>
 
     <div className="section">
-        <Room 
+        <Link to="chatroom"><Room 
             capacity = "6/10"
             timer = "30 | 5"
             subject = "General"
-        />
+        /></Link>
         <Room 
             capacity = "13/20"
             timer = "30 | 5"

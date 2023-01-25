@@ -33,7 +33,7 @@ input {
     border-bottom: 1px solid var(--ascent-color)
 }
 
-input:last-of-type {
+.avatar {
     border-bottom: none;
 }
 

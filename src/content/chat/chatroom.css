@@ -1,0 +1,25 @@
+.chatRoomMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(white, #FCEADE);
+}
+
+.chatRoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    height: 750px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 100px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .chatRoom {
+        margin: 30px 5px;
+        width: 90%;
+    }
+}

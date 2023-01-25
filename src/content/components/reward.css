@@ -14,7 +14,7 @@
 }
 
 .modal {
-    font-size: 12px;
+    font-size: 16px;
     width: 100%;
     background: white;
     padding: 50px;
@@ -22,7 +22,7 @@
   .modal > .header {
 
     border-bottom: 2px solid var(--ascent-color);
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     padding: 5px;
 
