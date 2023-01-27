@@ -1,8 +1,12 @@
+.pageBg {
+    background: radial-gradient(white, #FCEADE);
+}
+
 .chatRoomMain {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(white, #FCEADE);
+    
 }
 
 .chatRoom {

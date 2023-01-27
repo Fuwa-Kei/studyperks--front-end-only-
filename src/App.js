@@ -18,6 +18,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/chatroom" element={<Chatroom />} />
+      <Route path="profile/chatroom" element={<Chatroom />} />
       </Routes>
       <Footer />
     </Router>

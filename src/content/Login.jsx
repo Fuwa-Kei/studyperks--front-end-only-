@@ -6,7 +6,9 @@ import './login.css'
 function Login() {
   return (
     <div>
+    <div className='pageBg'>
         <Navbar />
+      </div>
             <div className="formWrapper">
                 <h3>Log In</h3>
                 <form>

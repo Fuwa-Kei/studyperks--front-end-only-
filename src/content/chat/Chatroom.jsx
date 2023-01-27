@@ -6,7 +6,7 @@ import Navbar from '../Navbar'
 
 function Chatroom() {
   return (
-  <div>
+  <div className="pageBg">
     <Navbar />
     <div className="chatRoomMain">
       
