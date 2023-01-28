@@ -15,21 +15,21 @@ function Rooms() {
             timer = "30 | 5"
             subject = "General"
         /></Link>
-        <Room 
+        <Link to="chatroom"><Room 
             capacity = "13/20"
             timer = "30 | 5"
             subject = "Chemistry"
-        />
-        <Room 
+        /></Link>
+        <Link to="chatroom"><Room 
             capacity = "7/10"
             timer = "50 | 10"
             subject = "Biology"
-        />
-        <Room 
+        /></Link>
+        <Link to="chatroom"><Room 
             capacity = "3/10"
             timer = "20 | 10"
             subject = "Maths"
-        />
+        /></Link>
     </div>
 
     <div className="room-links">

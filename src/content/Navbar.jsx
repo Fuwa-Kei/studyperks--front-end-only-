@@ -19,7 +19,7 @@ function Navbar() {
                 <li><HashLink to="/#contact">contact</HashLink></li>
             </ul>
         </nav>
-        <div className="btn join"><Link to="/profile">Login</Link></div>
+        <div className="btn join"><Link to="/login">Login</Link></div>
         
     <div className="navbar-menu">
         {
