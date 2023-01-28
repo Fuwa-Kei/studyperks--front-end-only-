@@ -32,34 +32,36 @@ function Register() {
       const uploadTask = uploadBytesResumable(storageRef, file);
 
       uploadTask.on(
-        (error) => {
+        (err) => {
           setErr(true)
         }, 
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async(downloadURL) => {
             await updateProfile(res.user, {
                 displayName,
-                photoURL: downloadURL
-            });
+                photoURL: downloadURL,
+                
+            }); 
             
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
               displayName,
               email,
-              photoURL:downloadURL
-            });
+              photoURL:downloadURL,
+            }); 
 
-            await setDoc(doc(db, "userChats", res.user.uid, {}));
-            navigate("./");
+            await setDoc(doc(db, "userChats", res.user.uid), {});
+            navigate("/chatroom");
 
-          });
+          }); 
         }
       );
 
       
 
     } catch(err) {
-      setErr(true)
+      setErr(true);
+      
     }
     
        
