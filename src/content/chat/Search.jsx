@@ -35,16 +35,28 @@ const handlekey = (e) => {
 const {currentUser} = useContext(AuthContext)
 
   return (
+    <div>
     <div className="chatSearch">
       <div className="searchForm">
         <input type="text" placeholder='Search for a user' onKeyDown={handlekey} onChange={(e) => setUsername(e.target.value)} value={username} />
       </div>
+      
         {err && <p>User not found</p>}
-        <Users 
+        {user && (
+          <div>
+            <img src={user.photoURL} alt="" />
+            <div>
+              <p>{user.displayName}</p>
+            </div>
+          </div>
+         )}
+        
+        
+     </div>  
+     <div> <Users 
           img={currentUser.photoURL}
           name={currentUser.displayName}
-         />
-        
+         /></div>
     </div>
   )
 }

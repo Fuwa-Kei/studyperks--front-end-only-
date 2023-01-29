@@ -56,16 +56,10 @@ function Register() {
           }); 
         }
       );
-
-      
-
     } catch(err) {
       setErr(true);
-      
-    }
-    
-       
-}
+    }  
+  }
 
   return (
     <div>
