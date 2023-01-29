@@ -1,6 +1,8 @@
 Won Second Overall and Best Use of Google Cloud - MLH eduhacks
 StudyPerks is a co-studying web platform that lets you exchange your time studied for perks.
 
+Full project for the hackathon- https://github.com/Fuwa-Kei/StudyPerks-1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
